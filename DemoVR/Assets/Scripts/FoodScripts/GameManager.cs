@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     private MealType currentMealType;
     private Dictionary<MealType, List<FoodData>> foodsByMealType;
 
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         FoodData[] foodDataArray = JsonUtility.FromJson<Foods>(foodDataJson.text).foodDataArray;
         for (int i = 0; i < foodDataArray.Length; i++)
         {
+            Debug.Log(foodDataArray[i].name);
             foodData.Add(foodDataArray[i].name, foodDataArray[i]);
         }
     }

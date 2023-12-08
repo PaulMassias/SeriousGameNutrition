@@ -1,10 +1,18 @@
 using Tilia.Interactions.Interactables.Interactables;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class EatingArea : MonoBehaviour
 {
     public delegate void FruitDataDelegate(FoodData foodData);
     public event FruitDataDelegate OnFruitEaten;
+
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +38,7 @@ public class EatingArea : MonoBehaviour
         {
             interactableFacade.UngrabAll();
         }
+        audioSource.Play();
         Destroy(food.gameObject);
     }
 }
