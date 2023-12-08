@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 [System.Serializable]
 public class FoodData
 {
@@ -22,28 +20,6 @@ public class FoodData
         Alcohol,
         UltraProcessedProducts
     }
-
-    private static Dictionary<FoodDataProperty, float> propertyRecommendedMinValues = new()
-    {
-        { FoodDataProperty.Carbohydrates, 0.5f },
-        { FoodDataProperty.Lipids, 0.2f },
-        { FoodDataProperty.Proteins, 0.1f },
-        { FoodDataProperty.Fibers, 0.3f },
-        { FoodDataProperty.Water, 0.5f },
-        { FoodDataProperty.Alcohol, 0.0f },
-        { FoodDataProperty.UltraProcessedProducts, 0.0f }
-    };
-
-    private static Dictionary<FoodDataProperty, float> propertyRecommendedMaxValues = new()
-    {
-        { FoodDataProperty.Carbohydrates, 0.6f },
-        { FoodDataProperty.Lipids, 0.3f },
-        { FoodDataProperty.Proteins, 0.2f },
-        { FoodDataProperty.Fibers, 0.4f },
-        { FoodDataProperty.Water, 0.6f },
-        { FoodDataProperty.Alcohol, 0.0f },
-        { FoodDataProperty.UltraProcessedProducts, 0.0f }
-    };
 
     public FoodData()
     {
