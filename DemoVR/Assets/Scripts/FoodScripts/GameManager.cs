@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private TextAsset foodDataJson;
     [SerializeField]
     private EatingArea eatingArea;
+    [SerializeField]
+    private GUIManager guiManager;
     private Dictionary<string, FoodData> foodData;
 
     private MealType currentMealType;
@@ -121,5 +123,6 @@ public class GameManager : MonoBehaviour
     {
         // TODO: Update GUI
         Debug.Log(GetCurrentMealTotalData());
+        guiManager.UpdateSlideBar(GetCurrentMealTotalData());
     }
 }

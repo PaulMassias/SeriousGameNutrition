@@ -1,21 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using static ButtonLamp;
 
 public class SlideBar : MonoBehaviour
 {
 
     public TMP_Text text;
     public Scrollbar scrollbar;
-    public float valeur = 225;
     public float minValue = 225;
     public float maxValue = 325;
-    public bool entier = false;
+    public bool isInt = false;
 
 
     float NormalizeBetweenMinMax(float value, float min, float max)
@@ -26,43 +20,34 @@ public class SlideBar : MonoBehaviour
         // Normalisez la valeur entre 0 et 1
         float normalizedValue = (value - minBar) / (maxBar - minBar);
 
-        // Étendez la plage normalisée de 0.1 à 1
+        // ï¿½tendez la plage normalisï¿½e de 0.1 ï¿½ 1
         float scaledValue = normalizedValue * 0.9f + 0.1f;
 
         return scaledValue;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void SetValue(float value)
     {
-        if(entier)
+        if (isInt)
         {
-            text.text = valeur.ToString();
+            text.text = value.ToString();
         }
         else
         {
-            text.text = valeur + "g";
+            text.text = value + " g";
 
         }
-        float size = NormalizeBetweenMinMax(valeur, minValue, maxValue);
+        float size = NormalizeBetweenMinMax(value, minValue, maxValue);
         scrollbar.size = size;
-        if (valeur >= minValue && valeur <= maxValue)
+        if (value >= minValue && value <= maxValue)
         {
             scrollbar.handleRect.GetComponent<Image>().color = Color.green;
 
-        }else
+        }
+        else
         {
             scrollbar.handleRect.GetComponent<Image>().color = Color.red;
 
         }
-
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
