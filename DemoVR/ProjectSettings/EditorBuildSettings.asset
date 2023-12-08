@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
@@ -12,3 +13,19 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b84333abe36dc6d4f91d8e887741fb4b,
       type: 2}
+=======
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes: []
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 800f7226d1299434e9f4c95341185e58,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b20e3df60227bf940a22dda4d3a115bb,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b84333abe36dc6d4f91d8e887741fb4b,
+      type: 2}
+>>>>>>> Stashed changes
