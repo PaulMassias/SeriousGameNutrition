@@ -120,5 +120,6 @@ public class GameManager : MonoBehaviour
     private void UpdateGUI()
     {
         // TODO: Update GUI
+        Debug.Log(GetCurrentMealTotalData());
     }
 }
