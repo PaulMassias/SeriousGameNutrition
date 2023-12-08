@@ -8,6 +8,7 @@ public class EatingArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger entered");
         if (other.TryGetComponent(out Food food))
         {
             EatFood(food);
