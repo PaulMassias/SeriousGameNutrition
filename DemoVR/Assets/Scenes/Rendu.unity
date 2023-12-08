@@ -691,11 +691,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2004034079479314526, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteProteines
+      objectReference: {fileID: 0}
     - target: {fileID: 2140661873083820426, guid: 60303614e4a5a1647928abced4cdeaf6,
         type: 3}
       propertyPath: m_Name
       value: Monitor_CRT
       objectReference: {fileID: 0}
+    - target: {fileID: 2415051652609185112, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteGlucides
+      objectReference: {fileID: 0}
     - target: {fileID: 2663101317319777677, guid: 60303614e4a5a1647928abced4cdeaf6,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -705,6 +715,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348881199111502239, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteEau
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643673634995763185, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteAlcool
       objectReference: {fileID: 0}
     - target: {fileID: 3826086083121626094, guid: 60303614e4a5a1647928abced4cdeaf6,
         type: 3}
@@ -726,6 +746,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4581388123631099900, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteUltraTransforme
+      objectReference: {fileID: 0}
     - target: {fileID: 5383783130267312869, guid: 60303614e4a5a1647928abced4cdeaf6,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -735,6 +760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6214545610483582285, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteFibres
       objectReference: {fileID: 0}
     - target: {fileID: 7016172594992285248, guid: 60303614e4a5a1647928abced4cdeaf6,
         type: 3}
@@ -760,6 +790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8753040350224513459, guid: 60303614e4a5a1647928abced4cdeaf6,
+        type: 3}
+      propertyPath: m_Name
+      value: MacroTexteLipides
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
