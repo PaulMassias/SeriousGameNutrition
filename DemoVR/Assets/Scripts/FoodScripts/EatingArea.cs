@@ -1,3 +1,4 @@
+using Tilia.Interactions.Interactables.Interactables;
 using UnityEngine;
 
 public class EatingArea : MonoBehaviour
@@ -23,6 +24,10 @@ public class EatingArea : MonoBehaviour
         else
         {
             Debug.LogError("Error while getting food data: foodData is null.");
+        }
+        if (food.gameObject.TryGetComponent(out InteractableFacade interactableFacade))
+        {
+            interactableFacade.UngrabAll();
         }
         Destroy(food.gameObject);
     }

@@ -64,14 +64,12 @@ public class FoodData
     /// <returns> The sum of the given foods data </returns>
     public static FoodData TotalFromArray(FoodData[] foodDataArray)
     {
-        FoodData totalData = new()
-        {
-            name = "Total"
-        };
+        FoodData totalData = new();
         for (int i = 0; i < foodDataArray.Length; i++)
         {
             totalData += foodDataArray[i];
         }
+        totalData.name = "Total";
         return totalData;
     }
 
@@ -157,5 +155,17 @@ public class FoodData
             }
         }
         return maxIndex;
+    }
+
+    public override string ToString()
+    {
+        return name + ":\n" +
+            "Carbohydrates: " + carbohydrates + "\n" +
+            "Lipids: " + lipids + "\n" +
+            "Proteins: " + proteins + "\n" +
+            "Fibers: " + fibers + "\n" +
+            "Water: " + water + "\n" +
+            "Alcohol: " + alcohol + "\n" +
+            "Ultra-processed products: " + ultraProcessedProducts;
     }
 }
